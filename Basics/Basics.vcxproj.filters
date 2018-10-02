@@ -74,13 +74,13 @@
     <ClCompile Include="UnicodeStrings.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Pimpl.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
     <ClCompile Include="IBase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Crtp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Pimpl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

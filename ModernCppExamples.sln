@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExportObjectExe", "ExportOb
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cpp17", "Cpp17\Cpp17.vcxproj", "{333C4A9E-86C1-4A1A-8BB3-E634439DEED8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Playground", "Playground\Playground.vcxproj", "{466FA5A4-9C6A-4C78-BEEB-8E1B078DC884}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -143,6 +145,20 @@ Global
 		{333C4A9E-86C1-4A1A-8BB3-E634439DEED8}.Release|Win32.Build.0 = Release|Win32
 		{333C4A9E-86C1-4A1A-8BB3-E634439DEED8}.Release|x64.ActiveCfg = Release|x64
 		{333C4A9E-86C1-4A1A-8BB3-E634439DEED8}.Release|x64.Build.0 = Release|x64
+		{466FA5A4-9C6A-4C78-BEEB-8E1B078DC884}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{466FA5A4-9C6A-4C78-BEEB-8E1B078DC884}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{466FA5A4-9C6A-4C78-BEEB-8E1B078DC884}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{466FA5A4-9C6A-4C78-BEEB-8E1B078DC884}.Debug|Win32.ActiveCfg = Debug|Win32
+		{466FA5A4-9C6A-4C78-BEEB-8E1B078DC884}.Debug|Win32.Build.0 = Debug|Win32
+		{466FA5A4-9C6A-4C78-BEEB-8E1B078DC884}.Debug|x64.ActiveCfg = Debug|x64
+		{466FA5A4-9C6A-4C78-BEEB-8E1B078DC884}.Debug|x64.Build.0 = Debug|x64
+		{466FA5A4-9C6A-4C78-BEEB-8E1B078DC884}.Release|Any CPU.ActiveCfg = Release|Win32
+		{466FA5A4-9C6A-4C78-BEEB-8E1B078DC884}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{466FA5A4-9C6A-4C78-BEEB-8E1B078DC884}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{466FA5A4-9C6A-4C78-BEEB-8E1B078DC884}.Release|Win32.ActiveCfg = Release|Win32
+		{466FA5A4-9C6A-4C78-BEEB-8E1B078DC884}.Release|Win32.Build.0 = Release|Win32
+		{466FA5A4-9C6A-4C78-BEEB-8E1B078DC884}.Release|x64.ActiveCfg = Release|x64
+		{466FA5A4-9C6A-4C78-BEEB-8E1B078DC884}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
