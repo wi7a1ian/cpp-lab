@@ -10,7 +10,7 @@ namespace generic_pushback
 	template<typename C, typename... Args>
 	void push_back(C& c, Args&&... args)
 	{
-		(c.push_back(args), ...);
+		(c.push_back(args), ...); //  note: fold expressions
 	}
 
 	int main()
