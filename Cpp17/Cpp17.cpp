@@ -32,6 +32,23 @@ void [[deprecated("This function is not safe")]] deprecatedFoo()
 {
 }
 
+// 7. Variant as a error val (may be depreecated in favor of std::expected)
+auto toInt(const std::string& s) -> std::variant<int, std::string>
+{
+	int i; 
+	std::stringstream ss;
+	ss << s; 
+	ss >> i;
+
+	if (ss.fail())
+	{
+		return s + " is not an intiger";
+	}
+	
+	return i;
+}
+
+
 int main()
 {
 	{ // 1. Variable templates
@@ -67,6 +84,17 @@ int main()
 		using namespace std::string_literals;
 		auto a = "hello there"s;
 		std::string_view largeStringView{ a.c_str(), a.size() };
+	}
+
+	{ // 7. String view
+		if (auto i = toInt("1"); auto pi = std::get_if<int>(&i))
+		{
+			auto val = *pi;
+		}
+		else
+		{
+			auto err = std::get<std::string>(i);
+		}
 	}
 
     return 0;
