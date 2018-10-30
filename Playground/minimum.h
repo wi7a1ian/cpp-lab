@@ -30,5 +30,7 @@ namespace generic_minimum
 
 		auto y = minimumc(std::less<>(), 3, 2, 1, 0);
 		std::cout << y << std::endl;
+
+		return 0;
 	}
 }

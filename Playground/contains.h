@@ -69,5 +69,7 @@ namespace generic_contains
 		assert(!contains_none(v, 0, 6, 7));
 		assert(!contains_none(a, 0, 6, 7));
 		assert(!contains_none(l, 0, 6, 7));
+
+		return 0;
 	}
 }

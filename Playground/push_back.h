@@ -24,5 +24,7 @@ namespace generic_pushback
 		push_back(l, 1, 2, 3, 4);
 		std::copy(std::begin(l), std::end(l),
 			std::ostream_iterator<int>(std::cout, " "));
+
+		return 0;
 	}
 }
