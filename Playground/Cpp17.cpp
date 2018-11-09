@@ -1,7 +1,5 @@
-// Cpp17.cpp : Defines the entry point for the console application.
-//
-
 #include "stdafx.h"
+
 
 // 1. Variable templates
 template <typename T> T pi = (T)3.141592;
@@ -32,7 +30,7 @@ void [[deprecated("This function is not safe")]] deprecatedFoo()
 {
 }
 
-// 7. Variant as a error val (may be depreecated in favor of std::expected)
+// 7. Variant as a error val (may be deprecated in favor of std::expected)
 auto toInt(const std::string& s) -> std::variant<int, std::string>
 {
 	int i; 
@@ -49,7 +47,7 @@ auto toInt(const std::string& s) -> std::variant<int, std::string>
 }
 
 
-int main()
+int Cpp17Samples()
 {
 	{ // 1. Variable templates
 		double x = sin(2.0*440.0*pi<double>*0.01); // specializes pi as double
@@ -100,6 +98,6 @@ int main()
     return 0;
 }
 
-namespace namespace1::namespace2::namespace3{
+namespace namespace1::namespace2::namespace3 {
 	// 2. Namespace nesting
 }

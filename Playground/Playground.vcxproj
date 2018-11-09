@@ -151,14 +151,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Benchmark.h" />
+    <ClInclude Include="Casting.h" />
+    <ClInclude Include="Concurrency.h" />
     <ClInclude Include="contains.h" />
+    <ClInclude Include="Crtp.h" />
+    <ClInclude Include="IBase.h" />
+    <ClInclude Include="Metaprogramming.h" />
     <ClInclude Include="minimum.h" />
+    <ClInclude Include="MitigateVirtualFunctions.h" />
+    <ClInclude Include="Pimpl.h" />
     <ClInclude Include="push_back.h" />
     <ClInclude Include="select.h" />
+    <ClInclude Include="Semaphore.h" />
+    <ClInclude Include="SimpleDependencyInjection.hpp" />
+    <ClInclude Include="SimpleInheritance.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StyleGuide.hpp" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="UnicodeStrings.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Benchmark.cpp" />
+    <ClCompile Include="Casting.cpp" />
+    <ClCompile Include="Cpp17.cpp" />
+    <ClCompile Include="Crtp.cpp" />
+    <ClCompile Include="IBase.cpp" />
+    <ClCompile Include="Pimpl.cpp" />
     <ClCompile Include="Playground.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -166,6 +185,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="UnicodeStrings.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
