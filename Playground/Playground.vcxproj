@@ -159,6 +159,7 @@
     <ClInclude Include="IBase.h" />
     <ClInclude Include="Metaprogramming.h" />
     <ClInclude Include="minimum.h" />
+    <ClInclude Include="MitigateBranchPrediction.h" />
     <ClInclude Include="MitigateVirtualFunctions.h" />
     <ClInclude Include="Pimpl.h" />
     <ClInclude Include="push_back.h" />

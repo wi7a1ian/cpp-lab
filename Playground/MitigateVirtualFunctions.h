@@ -1,4 +1,7 @@
 #pragma once
+#include <memory>
+#include <string>
+
 namespace MitigateVirtualFunctions
 {
 	namespace regular 
@@ -30,7 +33,7 @@ namespace MitigateVirtualFunctions
 			void MainLoop() final {
 				while (true)
 				{
-					mOrderSender.SendOrder(); // crucial point, devirtualization needed
+					mOrderSender.SendOrder(); // hotpath, devirtualization needed
 				}
 			}
 
@@ -40,6 +43,12 @@ namespace MitigateVirtualFunctions
 
 	namespace faster
 	{
+		struct IOrderManager
+		{
+			virtual ~IOrderManager() = default;
+			virtual void MainLoop() = 0;
+		};
+
 		struct OrderSenderA {
 			void SendOrder() {}
 		};
@@ -52,9 +61,25 @@ namespace MitigateVirtualFunctions
 		struct OrderManager : public IOrderManager
 		{
 			void MainLoop() final {
-				mOrderSender.SendOrder(); // crucial point, probably inlined
+				mOrderSender.SendOrder(); // hotpath, probably inlined
 			}
 			T mOrderSender;
 		};
+
+		std::unique_ptr<IOrderManager> Factory(const char* config)
+		{
+			if (std::string("ChooseA") == config)
+			{
+				return std::make_unique<OrderManager<OrderSenderA>>();
+			} 
+			else if (std::string("ChooseB") == config)
+			{
+				return std::make_unique<OrderManager<OrderSenderB>>();
+			}
+			else
+			{
+				throw;
+			}
+		}
 	}
 }
