@@ -131,6 +131,12 @@ Place helper functions in the same namespace as the class they support. This is 
 Use class rather than struct if any member is non-public.
 “the rule of zero” - If you can avoid defining default operations, do.
 “the rule of five” or six - If you define or =delete any default operation, define or =delete them all: def ctor, copy ctor, copy assignment op, move ctor, move assignment op, dtor 
+		~Foo(){...} // then:
+		Foo() = default;
+		Foo(Foo&&) noexcept = default;
+		Foo& operator=(Foo&&) noexcept = default;
+		Foo(const Foo&) noexcept = default;
+		Foo& operator=(const Foo&) noexcept = default;
 If a class has an owning pointer member, define a destructor. If a class has an owning reference member, define a destructor.
 A base class destructor should be either public and virtual, or protected and nonvirtual.
 A destructor may not fail. Declare a destructor noexcept. That will ensure that it either completes normally or terminate the program. "~X() noexcept".
