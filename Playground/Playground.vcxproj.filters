@@ -75,6 +75,9 @@
     <ClInclude Include="MitigateBranchPrediction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="enumerate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
