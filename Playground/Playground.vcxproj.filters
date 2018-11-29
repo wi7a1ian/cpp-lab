@@ -107,5 +107,8 @@
     <ClCompile Include="Cpp17.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="heap_corruption_ex_1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
