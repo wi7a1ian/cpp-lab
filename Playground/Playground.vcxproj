@@ -154,8 +154,10 @@
     <ClInclude Include="Benchmark.h" />
     <ClInclude Include="Casting.h" />
     <ClInclude Include="Concurrency.h" />
+    <ClInclude Include="ConstLValueReference.h" />
     <ClInclude Include="contains.h" />
     <ClInclude Include="Crtp.h" />
+    <ClInclude Include="DelegatingConstructors.h" />
     <ClInclude Include="enumerate.h" />
     <ClInclude Include="IBase.h" />
     <ClInclude Include="Metaprogramming.h" />
@@ -169,6 +171,7 @@
     <ClInclude Include="SimpleDependencyInjection.hpp" />
     <ClInclude Include="SimpleInheritance.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StrongTypedef.h" />
     <ClInclude Include="StyleGuide.hpp" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="UnicodeStrings.h" />
@@ -182,6 +185,7 @@
     <ClCompile Include="IBase.cpp" />
     <ClCompile Include="Pimpl.cpp" />
     <ClCompile Include="Playground.cpp" />
+    <ClCompile Include="SimpleDependencyInjection.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

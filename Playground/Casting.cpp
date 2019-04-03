@@ -1,4 +1,5 @@
 #include "stdafx.h"
+#include "SimpleInheritance.h"
 
 namespace CastingTest{
 	using namespace std;
