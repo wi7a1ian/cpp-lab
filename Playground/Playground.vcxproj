@@ -23,7 +23,7 @@
     <ProjectGuid>{466FA5A4-9C6A-4C78-BEEB-8E1B078DC884}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Playground</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -175,6 +175,7 @@
     <ClInclude Include="StyleGuide.hpp" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="UnicodeStrings.h" />
+    <ClInclude Include="Visitor.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Benchmark.cpp" />
